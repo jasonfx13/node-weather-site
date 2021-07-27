@@ -3,7 +3,9 @@ const search = document.querySelector('.weatherform #address');
 const messageContainer = document.querySelector('#message p');
 const headerContainer = document.querySelector('#message h4')
 const loader = document.getElementById('loader');
+
 form.addEventListener('submit', (e) => {
+
   e.preventDefault();
   loader.classList.add('loading');
   messageContainer.textContent = 'Loading...';
