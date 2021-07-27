@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <title>The App - {{title}}</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main class="main">
+  {{>header}}
+  <div class="content">
+    <h1>{{title}}</h1>
+    <p>
+      This page does not exist. Use the following resources to find the page you're looking for.
+    </p>
+    <ul>
+      <li><a href="/">Weather</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/help">Help</a></li>
+    </ul>
+  </div>
+  {{>footer}}
+</main>
+
+</body>
+</html>

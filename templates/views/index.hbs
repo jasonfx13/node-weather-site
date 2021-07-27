@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <title>The App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<main class="main">
+  {{>header}}
+  <div class="content">
+    <h1>{{title}}</h1>
+    <div id="weather_container" class="weather-container">
+      <p>
+        This is the app via hbs, created by {{name}}
+      </p>
+      <form class="weatherform" action="">
+        <label for="address">Enter address</label>
+        <div class="field-container side-by-side">
+
+          <input placeholder="Address" id="address" type="text">
+          <button>Search</button>
+        </div>
+
+
+      </form>
+      <div id="loader">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <div id="message">
+        <h4></h4>
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+  {{>footer}}
+</main>
+<script src="/js/app.js"></script>
+</body>
+</html>
