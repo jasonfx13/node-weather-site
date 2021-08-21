@@ -16,7 +16,6 @@ app.set('view engine', 'hbs');
 app.set('views', templatePath);
 hbs.registerPartials(templatePartials);
 
-
 // setup static directory to serve
 app.use(express.static(publicDirectory))
 
